@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Abdul Haqq — Cybersecurity & Computer Science</title>
+  <meta name="description" content="Abdul Haqq Yusif Trawule. Computer Science student at KNUST, pursuing cybersecurity and security operations. Explore my projects and get in touch.">
+  <meta property="og:title" content="Abdul Haqq — Cybersecurity & Computer Science">
+  <meta property="og:description" content="Computer Science at KNUST. Cybersecurity, security operations, and projects built along the way.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ffffff'/%3E%3Cpath d='M16 7v18M7 16h18' stroke='%23d34a50' stroke-width='4'/%3E%3C/svg%3E">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('haqq-theme') || 'light'; } catch (_) { document.documentElement.dataset.theme = 'light'; }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">skip to content</a>
+  <div class="page">
+    <main id="main" class="content">
+      <header class="masthead">
+        <div class="identity">
+          <h1 aria-label="Abdul Haqq"><span class="plus" aria-hidden="true">+</span><span class="name" aria-hidden="true">ABDUL HAQQ</span><span class="cursor" aria-hidden="true"></span></h1>
+          <p class="byline">yusif trawule · based in ghana</p>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3.7"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.5 1.5m11.2 11.2 1.5 1.5M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"/></svg>
+          <svg class="moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.7 13a8.8 8.8 0 1 1-9.7-9.7 7 7 0 0 0 9.7 9.7Z"/></svg>
+        </button>
+      </header>
+
+      <section class="intro" aria-label="About me">
+        <p>computer science student at <a href="https://www.knust.edu.gh/" target="_blank" rel="noopener noreferrer">knust</a>, based in ghana. pursuing a career in <button class="text-link" type="button" data-detail="focus">cybersecurity</button>, with a focus on security operations, network security, and incident response. previously an it intern at <button class="text-link" type="button" data-detail="experience">bureau veritas</button>, <button class="text-link" type="button" data-detail="experience">corenet it limited</button>, and <button class="text-link" type="button" data-detail="experience">new crystal hospital</button>. i build with python and java, and led a <button class="text-link" type="button" data-detail="rtc">nine-member embedded systems team</button>.</p>
+        <p class="connect-caption">let’s connect.</p>
+        <nav class="social-links" aria-label="Connect with Abdul Haqq">
+          <a href="https://www.linkedin.com/in/just-haqq" target="_blank" rel="noopener noreferrer">linkedin</a>
+          <a href="https://github.com/Just-haqq" target="_blank" rel="noopener noreferrer">github</a>
+          <a href="mailto:yusifabdulhaqq@gmail.com">email</a>
+        </nav>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-label">
+        <h2 id="projects-label">selected work</h2>
+        <ul>
+          <li><button class="text-link" type="button" data-detail="cyber">cyber-helper</button><span class="project-description"> — phishing-awareness browser extension</span></li>
+          <li><button class="text-link" type="button" data-detail="safemeds">safemeds</button><span class="project-description"> — medicine management web app</span></li>
+          <li><button class="text-link" type="button" data-detail="rtc">real-time clock</button><span class="project-description"> — esp32, oled, and a team of nine</span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div><p>© <span id="year">2026</span> abdul haqq yusif trawule</p><p><time id="ghana-clock" aria-label="Current time in Ghana">ghana · gmt</time></p></div>
+        <p class="footer-contact">reach out, <a href="mailto:yusifabdulhaqq@gmail.com">yusifabdulhaqq@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-body">
+    <div class="dialog-inner">
+      <div class="dialog-top"><p id="detail-label" class="eyebrow">selected work</p><button id="close-dialog" class="close-dialog" type="button" aria-label="Close details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <h2 id="detail-title"></h2>
+      <div id="detail-body"></div>
+      <p id="detail-stack" class="detail-stack"></p>
+      <a id="detail-link" class="dialog-link" href="https://github.com/Just-haqq" target="_blank" rel="noopener noreferrer">browse my work on github</a>
+    </div>
+  </dialog>
+</body>
+</html>
